@@ -253,10 +253,18 @@ alert("Avval tabrik yarating 🙂")
 return
 }
 
-const shareUrl =
-"https://t.me/share/url?url=&text=" + encodeURIComponent(text)
+const site="https://javohirweb-mart-tabrik.netlify.app/"
 
-window.open(shareUrl,"_blank")
+const message =
+text + "\n\n🎁 Siz ham tabrik yarating:\n" + site
+
+const url =
+"https://t.me/share/url?url=" +
+encodeURIComponent(site) +
+"&text=" +
+encodeURIComponent(message)
+
+window.open(url,"_blank")
 
 }
     </script>
